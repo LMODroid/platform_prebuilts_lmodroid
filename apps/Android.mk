@@ -1,3 +1,4 @@
+#
 # Copyright (C) 2020 The LibreMobileOS Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,6 +21,7 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := jellyfish/Jellyfish.apk
+LOCAL_SYSTEM_EXT_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -28,6 +30,7 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := musicplayergo/MusicPlayerGO.apk
+LOCAL_SYSTEM_EXT_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -36,4 +39,5 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := vlc/VLC.apk
+LOCAL_SYSTEM_EXT_MODULE := true
 include $(BUILD_PREBUILT)
