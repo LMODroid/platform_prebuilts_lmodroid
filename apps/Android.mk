@@ -22,6 +22,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := platform
 LOCAL_SRC_FILES := jellyfish/Jellyfish.apk
 LOCAL_PRODUCT_MODULE := true
+LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.sidecar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -31,6 +32,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := musicplayergo/MusicPlayerGO.apk
 LOCAL_PRODUCT_MODULE := true
+LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.sidecar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -40,6 +42,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := vlc/VLC.apk
 LOCAL_PRODUCT_MODULE := true
+LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.sidecar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
