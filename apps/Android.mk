@@ -36,16 +36,6 @@ LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.side
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := VLC
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_TAGS := optional
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_SRC_FILES := vlc/VLC.apk
-LOCAL_PRODUCT_MODULE := true
-LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.sidecar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := F-Droid
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
