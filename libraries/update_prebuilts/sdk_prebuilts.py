@@ -30,6 +30,7 @@ maven_to_make = {
     'androidx.core:core': { },
     'androidx.core:core-animation': { },
     'androidx.core:core-ktx': { },
+    'androidx.core:core-splashscreen': { },
     'androidx.contentpaging:contentpaging': { },
     'androidx.coordinatorlayout:coordinatorlayout': { },
     'androidx.legacy:legacy-support-core-ui': { },
