@@ -43,3 +43,13 @@ LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := fdroid/F-Droid.apk
 LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := NumberHub
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := shared
+LOCAL_SRC_FILES := NumberHub/NumberHub.apk
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.sidecar
+include $(BUILD_PREBUILT)
