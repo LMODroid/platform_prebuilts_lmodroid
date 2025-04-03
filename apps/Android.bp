@@ -32,6 +32,10 @@ android_app_import {
     apk: "fdroid/F-Droid.apk",
     presigned: true,
     product_specific: true,
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
 }
 
 android_app_import {
