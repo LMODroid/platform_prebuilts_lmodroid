@@ -48,3 +48,39 @@ android_app_import {
         "androidx.window.sidecar",
     ],
 }
+
+android_app_import {
+    name: "OrganicMaps",
+    apk: "OrganicMaps/OrganicMaps.apk",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    preprocessed: true,
+    system_ext_specific: true,
+    privileged: false,
+    filename: "OrganicMaps.apk",
+    required: ["liborganicmaps"],
+    skip_preprocessed_apk_checks: true
+}
+
+cc_prebuilt_library_shared {
+    name: "liborganicmaps",
+    arch: {
+        arm: {
+            srcs: ["OrganicMaps/jni/armeabi-v7a/liborganicmaps.so"],
+        },
+        arm64: {
+            srcs: ["OrganicMaps/jni/arm64-v8a/liborganicmaps.so"],
+        },
+        x86_64: {
+            srcs: ["OrganicMaps/jni/x86_64/liborganicmaps.so"],
+        },
+    },
+    check_elf_files: false,
+    compile_multilib: "both",
+    system_ext_specific: true,
+    strip: {
+        none: true,
+    },
+}
