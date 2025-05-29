@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>androidx.databinding</groupId>
   <artifactId>databinding-adapters</artifactId>
-  <version>8.6.0-alpha08</version>
+  <version>8.12.0-alpha02</version>
   <packaging>aar</packaging>
   <licenses>
     <license>
@@ -22,13 +22,13 @@
     <dependency>
       <groupId>androidx.databinding</groupId>
       <artifactId>databinding-common</artifactId>
-      <version>8.6.0-alpha08</version>
+      <version>8.12.0-alpha02</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>androidx.databinding</groupId>
       <artifactId>databinding-runtime</artifactId>
-      <version>8.6.0-alpha08</version>
+      <version>8.12.0-alpha02</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
