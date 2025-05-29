@@ -36,12 +36,14 @@ maven_repos = {
 # e.g.:
 #   'androidx.appcompat:appcompat:latest:aar': {'repo': 'gmaven'}
 maven_artifacts = {
+    'androidx.core:core-splashscreen:latest:aar': {'repo': 'gmaven'},
     # databinding
     'androidx.databinding:databinding-runtime:latest:aar': {'repo': 'gmaven'},
     'androidx.databinding:databinding-common:latest:jar': {'repo': 'gmaven'},
     'androidx.databinding:databinding-adapters:latest:aar': {'repo': 'gmaven'},
     'androidx.databinding:databinding-ktx:latest:aar': {'repo': 'gmaven'},
     'androidx.databinding:viewbinding:latest:aar': {'repo': 'gmaven'},
+    'androidx.preference:preference-ktx:latest:aar': {'repo': 'gmaven'},
 }
 
 # Mapping of POM dependencies to Soong build targets
